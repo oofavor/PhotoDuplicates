@@ -7,7 +7,7 @@
       "request": "launch",
       "preLaunchTask": "build",
       "program": "${workspaceFolder}/PhotoDuplicates.WinForms/bin/Debug/net10.0-windows/PhotoDuplicates.exe",
-      "args": ["${workspaceFolder}/DemoPhotos"],
+      "args": ["${workspaceFolder}/DemoPhotos", "-s", "-r"],
       "cwd": "${workspaceFolder}"
     },
     {
@@ -25,7 +25,17 @@
       "request": "launch",
       "preLaunchTask": "build",
       "program": "${workspaceFolder}/PhotoDuplicates.ConsoleApp/bin/Debug/net10.0-windows/PhotoDuplicates.ConsoleApp.exe",
-      "args": ["DemoPhotos"],
+      "args": ["DemoPhotos", "-s", "-r"],
+      "cwd": "${workspaceFolder}",
+      "console": "integratedTerminal"
+    },
+    {
+      "name": "Консоль: пересчитать всё (очистить кеш)",
+      "type": "coreclr",
+      "request": "launch",
+      "preLaunchTask": "build",
+      "program": "${workspaceFolder}/PhotoDuplicates.ConsoleApp/bin/Debug/net10.0-windows/PhotoDuplicates.ConsoleApp.exe",
+      "args": ["DemoPhotos", "-s", "-r", "--clear-cache"],
       "cwd": "${workspaceFolder}",
       "console": "integratedTerminal"
     },
@@ -35,7 +45,7 @@
       "request": "launch",
       "preLaunchTask": "build",
       "program": "${workspaceFolder}/PhotoDuplicates.ConsoleApp/bin/Debug/net10.0-windows/PhotoDuplicates.ConsoleApp.exe",
-      "args": ["DemoPhotos", "--exact-only"],
+      "args": ["DemoPhotos", "--exact-only", "-r"],
       "cwd": "${workspaceFolder}",
       "console": "integratedTerminal"
     }
