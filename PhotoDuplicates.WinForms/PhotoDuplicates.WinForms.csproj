@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <!-- окно программы, логика в PhotoDuplicates.Core -->
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net10.0-windows</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <ApplicationHighDpiMode>PerMonitorV2</ApplicationHighDpiMode>
+    <!-- Имя готового файла: PhotoDuplicates.exe -->
+    <AssemblyName>PhotoDuplicates</AssemblyName>
+    <RootNamespace>PhotoDuplicates.WinForms</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\PhotoDuplicates.Core\PhotoDuplicates.Core.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,43 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Окно: DemoPhotos",
+      "type": "coreclr",
+      "request": "launch",
+      "preLaunchTask": "build",
+      "program": "${workspaceFolder}/PhotoDuplicates.WinForms/bin/Debug/net10.0-windows/PhotoDuplicates.exe",
+      "args": ["${workspaceFolder}/DemoPhotos"],
+      "cwd": "${workspaceFolder}"
+    },
+    {
+      "name": "Окно: без папки",
+      "type": "coreclr",
+      "request": "launch",
+      "preLaunchTask": "build",
+      "program": "${workspaceFolder}/PhotoDuplicates.WinForms/bin/Debug/net10.0-windows/PhotoDuplicates.exe",
+      "args": [],
+      "cwd": "${workspaceFolder}"
+    },
+    {
+      "name": "Консоль: отчёт по DemoPhotos",
+      "type": "coreclr",
+      "request": "launch",
+      "preLaunchTask": "build",
+      "program": "${workspaceFolder}/PhotoDuplicates.ConsoleApp/bin/Debug/net10.0-windows/PhotoDuplicates.ConsoleApp.exe",
+      "args": ["DemoPhotos"],
+      "cwd": "${workspaceFolder}",
+      "console": "integratedTerminal"
+    },
+    {
+      "name": "Консоль: только точные копии",
+      "type": "coreclr",
+      "request": "launch",
+      "preLaunchTask": "build",
+      "program": "${workspaceFolder}/PhotoDuplicates.ConsoleApp/bin/Debug/net10.0-windows/PhotoDuplicates.ConsoleApp.exe",
+      "args": ["DemoPhotos", "--exact-only"],
+      "cwd": "${workspaceFolder}",
+      "console": "integratedTerminal"
+    }
+  ]
+}

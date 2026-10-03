@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="PhotoDuplicates.Core/PhotoDuplicates.Core.csproj" />
+  <Project Path="PhotoDuplicates.WinForms/PhotoDuplicates.WinForms.csproj" />
+  <Project Path="PhotoDuplicates.ConsoleApp/PhotoDuplicates.ConsoleApp.csproj" />
+  <Project Path="PhotoDuplicates.Tests/PhotoDuplicates.Tests.csproj" />
+</Solution>
